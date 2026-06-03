@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=development npx tsx server/index.ts",
     "build-local": "npx vite build && esbuild server/index.ts --platform=node --bundle --packages=bundle --external:vite --format=cjs --outdir=dist --out-extension:.js=.cjs",
     "build": "npx vite build && esbuild server/index.ts --platform=node --bundle --packages=bundle --external:vite --format=cjs --outdir=dist --out-extension:.js=.cjs",
-    "start": "cross-env NODE_ENV=production node dist/index.cjs",
+    "start": "cross-env NODE_ENV=production node --env-file=prod.env dist/index.cjs",
     "check": "tsc",
     "load-local": "npm install ../ordinizer/app/client ../ordinizer/app/server ../ordinizer/app/analyzer",
     "load-latest": "npm install @civillyengaged/ordinizer-client@latest @civillyengaged/ordinizer-server@latest"
