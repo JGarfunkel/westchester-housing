@@ -12,8 +12,8 @@ export default {
     // Local dev: sibling ordinizer repo
     path.resolve(baseDir, "../ordinizer/app/client/src/**/*.{js,jsx,ts,tsx}"),
     path.resolve(baseDir, "../ordinizer/client/src/**/*.{js,jsx,ts,tsx}"),
-    // Production: ordinizer installed as npm package
-    path.resolve(baseDir, "node_modules/@civillyengaged/ordinizer-client/src/**/*.{js,ts,jsx,tsx}"),
+    // Production: ordinizer installed as npm package (src/ is not published; scan compiled dist/)
+    path.resolve(baseDir, "node_modules/@civillyengaged/ordinizer-client/dist/**/*.js"),
   ],
   safelist: [
     {
