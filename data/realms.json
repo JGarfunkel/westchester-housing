@@ -1,0 +1,24 @@
+{
+    "layout": {
+        "showHeader": false,
+        "onMapClick": ["sidebar"]
+    },
+  "realms": [
+    {
+      "id": "westchester-housing",
+      "name": "Westchester Housing Environmental Analysis",
+      "displayName": "Westchester Housing",
+      "description": "Westchester County housing",
+      "ruleType": "statute",
+      "datapath": "westchester-housing",
+      "entityType": "housing",
+      "entityFile": "municipalities.json",
+      "geo": {
+        "mapBoundaries": "gis/westchester-boundaries.json",
+        "mapCenter": [41.1220, -73.7949],
+        "stateProvince": "NY",
+        "county": "Westchester"
+      }
+   }
+]
+}
